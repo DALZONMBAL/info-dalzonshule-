@@ -11,13 +11,13 @@
 
   <meta name="theme-color" content="#0757d5">
 
-  <!-- Font Awesome — icônes officielles de marques -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   >
 
   <style>
+
     :root {
       --primary: #0757d5;
       --primary-dark: #063d99;
@@ -59,6 +59,31 @@
     button,
     input {
       font: inherit;
+    }
+
+    /* =========================
+       LOGO IMAGE
+    ========================== */
+
+    .site-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      border-radius: inherit;
+    }
+
+    .brand-logo {
+      overflow: hidden;
+    }
+
+    .about-logo {
+      overflow: hidden;
+      padding: 12px;
+    }
+
+    .footer-brand-logo {
+      overflow: hidden;
     }
 
     /* =========================
@@ -108,13 +133,8 @@
       align-items: center;
       justify-content: center;
 
-      background: linear-gradient(135deg, #0757d5, #4e91ff);
-      color: white;
-
-      font-size: 21px;
-      font-weight: 900;
-
-      box-shadow: 0 8px 25px rgba(7,87,213,.25);
+      background: white;
+      box-shadow: 0 8px 25px rgba(7,87,213,.18);
     }
 
     .brand small {
@@ -326,13 +346,21 @@
     }
 
     @keyframes floatPhone {
+
       0%,100% {
-        transform: rotateY(-8deg) rotateX(3deg) translateY(0);
+        transform:
+          rotateY(-8deg)
+          rotateX(3deg)
+          translateY(0);
       }
 
       50% {
-        transform: rotateY(-8deg) rotateX(3deg) translateY(-12px);
+        transform:
+          rotateY(-8deg)
+          rotateX(3deg)
+          translateY(-12px);
       }
+
     }
 
     .phone-screen {
@@ -346,7 +374,12 @@
       height: 105px;
       padding: 22px 18px;
 
-      background: linear-gradient(135deg,#0757d5,#438cff);
+      background: linear-gradient(
+        135deg,
+        #0757d5,
+        #438cff
+      );
+
       color: white;
     }
 
@@ -500,8 +533,16 @@
       justify-content: center;
 
       background:
-        radial-gradient(circle at 20% 20%, #b9d4ff, transparent 30%),
-        linear-gradient(135deg,#eaf2ff,#dceaff);
+        radial-gradient(
+          circle at 20% 20%,
+          #b9d4ff,
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #eaf2ff,
+          #dceaff
+        );
 
       position: relative;
       overflow: hidden;
@@ -517,11 +558,7 @@
 
       border-radius: 40px;
 
-      color: white;
-      font-size: 70px;
-      font-weight: 900;
-
-      background: linear-gradient(135deg,#0757d5,#4e91ff);
+      background: white;
 
       box-shadow:
         0 25px 50px rgba(7,87,213,.25);
@@ -665,7 +702,12 @@
     ========================== */
 
     .security {
-      background: linear-gradient(135deg,#071f4f,#0757d5);
+      background: linear-gradient(
+        135deg,
+        #071f4f,
+        #0757d5
+      );
+
       color: white;
       border-radius: 30px;
       padding: 65px;
@@ -819,6 +861,15 @@
 
       border-radius: 13px;
       background: #f8fafc;
+
+      border: 1px solid transparent;
+      transition: .25s;
+    }
+
+    .contact-item:hover {
+      border-color: #c8dbff;
+      background: #f5f8ff;
+      transform: translateY(-2px);
     }
 
     .contact-item i {
@@ -973,9 +1024,8 @@
       align-items: center;
       justify-content: center;
 
-      background: var(--primary);
+      background: white;
       border-radius: 10px;
-      color: white;
     }
 
     .footer p {
@@ -1148,7 +1198,9 @@
       .footer-bottom {
         flex-direction: column;
       }
+
     }
+
   </style>
 </head>
 
@@ -1165,30 +1217,56 @@
       <a href="#" class="brand">
 
         <div class="brand-logo">
-          D
+
+          <img
+            class="site-logo"
+            src="https://i.ibb.co/r2FQH4kp/Chat-GPT-Image-4-ao-t-2026-09-22-33.png"
+            alt="Logo Dalzon Shule"
+          >
+
         </div>
 
         <div>
+
           Dalzon Shule
-          <small>Connecter l'École à la Maison</small>
+
+          <small>
+            Connecter l'École à la Maison
+          </small>
+
         </div>
 
       </a>
 
+
       <div class="nav-links" id="navLinks">
 
-        <a href="#apropos">À propos</a>
-        <a href="#fonctionnalites">Fonctionnalités</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a href="#apropos">
+          À propos
+        </a>
+
+        <a href="#fonctionnalites">
+          Fonctionnalités
+        </a>
+
+        <a href="#faq">
+          FAQ
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
 
         <a
           href="https://dalzonshule.com"
           class="nav-cta">
+
           Accéder à Dalzon Shule
+
         </a>
 
       </div>
+
 
       <button
         class="menu-button"
@@ -1215,20 +1293,30 @@
       <div>
 
         <div class="hero-badge">
+
           <i class="fa-solid fa-graduation-cap"></i>
+
           Plateforme éducative numérique
+
         </div>
 
+
         <h1>
+
           L'école dans votre
           <span>poche.</span>
+
         </h1>
 
+
         <p class="hero-text">
+
           Dalzon Shule rapproche l'école, les élèves et les familles
           grâce à une plateforme numérique simple, moderne et pensée
           pour faciliter le suivi scolaire.
+
         </p>
+
 
         <div class="hero-buttons">
 
@@ -1237,9 +1325,11 @@
             class="btn btn-primary">
 
             <i class="fa-solid fa-arrow-right"></i>
+
             Accéder à la plateforme
 
           </a>
+
 
           <a
             href="#apropos"
@@ -1264,17 +1354,26 @@
 
             <div class="phone-top">
 
-              <small>Bonjour 👋</small>
+              <small>
+                Bonjour
+              </small>
 
-              <h3>Dalzon Shule</h3>
+              <h3>
+                Dalzon Shule
+              </h3>
 
             </div>
 
+
             <div class="phone-card">
 
-              <small>Progression scolaire</small>
+              <small>
+                Progression scolaire
+              </small>
 
-              <strong>Excellent travail</strong>
+              <strong>
+                Excellent travail
+              </strong>
 
               <div class="progress">
                 <span></span>
@@ -1282,27 +1381,42 @@
 
             </div>
 
+
             <div class="phone-card">
 
-              <small>Présence</small>
+              <small>
+                Présence
+              </small>
 
-              <strong>Présent</strong>
+              <strong>
+                Présent
+              </strong>
 
             </div>
 
+
             <div class="phone-card">
 
-              <small>Calendrier</small>
+              <small>
+                Calendrier
+              </small>
 
-              <strong>Prochaine activité</strong>
+              <strong>
+                Prochaine activité
+              </strong>
 
             </div>
 
+
             <div class="phone-card">
 
-              <small>Documents</small>
+              <small>
+                Documents
+              </small>
 
-              <strong>3 documents disponibles</strong>
+              <strong>
+                3 documents disponibles
+              </strong>
 
             </div>
 
@@ -1325,7 +1439,9 @@
 
     <div class="stat">
 
-      <strong>Élèves</strong>
+      <strong>
+        Élèves
+      </strong>
 
       <span>
         Suivi scolaire simplifié
@@ -1333,9 +1449,12 @@
 
     </div>
 
+
     <div class="stat">
 
-      <strong>Parents</strong>
+      <strong>
+        Parents
+      </strong>
 
       <span>
         Meilleure visibilité
@@ -1343,9 +1462,12 @@
 
     </div>
 
+
     <div class="stat">
 
-      <strong>Écoles</strong>
+      <strong>
+        Écoles
+      </strong>
 
       <span>
         Gestion numérique
@@ -1360,14 +1482,22 @@
        À PROPOS
   ========================== -->
 
-  <section class="section" id="apropos">
+  <section
+    class="section"
+    id="apropos">
 
     <div class="about-grid">
 
       <div class="about-visual">
 
         <div class="about-logo">
-          D
+
+          <img
+            class="site-logo"
+            src="https://i.ibb.co/r2FQH4kp/Chat-GPT-Image-4-ao-t-2026-09-22-33.png"
+            alt="Logo officiel Dalzon Shule"
+          >
+
         </div>
 
       </div>
@@ -1387,43 +1517,72 @@
 
         </div>
 
-        <p>
-          <strong>Dalzon Shule</strong> est une plateforme numérique
-          dédiée au suivi et à la communication scolaire.
-        </p>
 
         <p>
-          Son objectif est de permettre aux établissements, aux élèves
-          et aux parents de retrouver plus facilement les informations
-          importantes liées à la vie scolaire.
+
+          <strong>
+            Dalzon Shule
+          </strong>
+
+          est une plateforme numérique dédiée au suivi
+          et à la communication scolaire.
+
         </p>
 
+
         <p>
+
+          Son objectif est de permettre aux établissements,
+          aux élèves et aux parents de retrouver plus facilement
+          les informations importantes liées à la vie scolaire.
+
+        </p>
+
+
+        <p>
+
           Dalzon Shule s'inscrit dans une vision plus large :
           rendre les outils numériques éducatifs plus accessibles
           et pratiques.
+
         </p>
+
 
         <ul class="check-list">
 
           <li>
+
             <i class="fa-solid fa-circle-check"></i>
+
             Interface moderne et simple
+
           </li>
 
+
           <li>
+
             <i class="fa-solid fa-circle-check"></i>
+
             Accès adapté aux différents utilisateurs
+
           </li>
 
+
           <li>
+
             <i class="fa-solid fa-circle-check"></i>
+
             Informations scolaires centralisées
+
           </li>
 
+
           <li>
+
             <i class="fa-solid fa-circle-check"></i>
+
             Pensé pour les appareils mobiles
+
           </li>
 
         </ul>
@@ -1460,15 +1619,18 @@
 
     <div class="cards">
 
-      <!-- Élève -->
 
       <article class="card">
 
         <div class="card-icon">
+
           <i class="fa-solid fa-user-graduate"></i>
+
         </div>
 
-        <h3>Élèves</h3>
+        <h3>
+          Élèves
+        </h3>
 
         <p>
           Retrouvez les principales informations concernant
@@ -1477,25 +1639,38 @@
 
         <ul>
 
-          <li>Notes et résultats</li>
-          <li>Présences</li>
-          <li>Calendrier</li>
-          <li>Documents scolaires</li>
+          <li>
+            Notes et résultats
+          </li>
+
+          <li>
+            Présences
+          </li>
+
+          <li>
+            Calendrier
+          </li>
+
+          <li>
+            Documents scolaires
+          </li>
 
         </ul>
 
       </article>
 
 
-      <!-- Parent -->
-
       <article class="card">
 
         <div class="card-icon">
+
           <i class="fa-solid fa-people-roof"></i>
+
         </div>
 
-        <h3>Parents</h3>
+        <h3>
+          Parents
+        </h3>
 
         <p>
           Suivez plus facilement la scolarité de votre enfant.
@@ -1503,25 +1678,38 @@
 
         <ul>
 
-          <li>Suivi des résultats</li>
-          <li>Présences</li>
-          <li>Informations scolaires</li>
-          <li>Communication</li>
+          <li>
+            Suivi des résultats
+          </li>
+
+          <li>
+            Présences
+          </li>
+
+          <li>
+            Informations scolaires
+          </li>
+
+          <li>
+            Communication
+          </li>
 
         </ul>
 
       </article>
 
 
-      <!-- École -->
-
       <article class="card">
 
         <div class="card-icon">
+
           <i class="fa-solid fa-school"></i>
+
         </div>
 
-        <h3>Établissements</h3>
+        <h3>
+          Établissements
+        </h3>
 
         <p>
           Facilitez la gestion et la communication avec
@@ -1530,10 +1718,21 @@
 
         <ul>
 
-          <li>Gestion des élèves</li>
-          <li>Notes</li>
-          <li>Présences</li>
-          <li>Communication avec les familles</li>
+          <li>
+            Gestion des élèves
+          </li>
+
+          <li>
+            Notes
+          </li>
+
+          <li>
+            Présences
+          </li>
+
+          <li>
+            Communication avec les familles
+          </li>
 
         </ul>
 
@@ -1572,11 +1771,14 @@
 
     <div class="features">
 
+
       <div class="feature">
 
         <i class="fa-solid fa-chart-line"></i>
 
-        <h3>Résultats scolaires</h3>
+        <h3>
+          Résultats scolaires
+        </h3>
 
         <p>
           Consultez les informations relatives aux résultats.
@@ -1589,7 +1791,9 @@
 
         <i class="fa-solid fa-calendar-days"></i>
 
-        <h3>Calendrier</h3>
+        <h3>
+          Calendrier
+        </h3>
 
         <p>
           Retrouvez les événements et informations importantes.
@@ -1602,7 +1806,9 @@
 
         <i class="fa-solid fa-clipboard-check"></i>
 
-        <h3>Présences</h3>
+        <h3>
+          Présences
+        </h3>
 
         <p>
           Suivez les informations de présence scolaire.
@@ -1615,7 +1821,9 @@
 
         <i class="fa-solid fa-file-lines"></i>
 
-        <h3>Documents</h3>
+        <h3>
+          Documents
+        </h3>
 
         <p>
           Accédez aux documents mis à disposition.
@@ -1628,7 +1836,9 @@
 
         <i class="fa-solid fa-bell"></i>
 
-        <h3>Notifications</h3>
+        <h3>
+          Notifications
+        </h3>
 
         <p>
           Recevez les informations importantes de la plateforme.
@@ -1641,7 +1851,9 @@
 
         <i class="fa-solid fa-comments"></i>
 
-        <h3>Communication</h3>
+        <h3>
+          Communication
+        </h3>
 
         <p>
           Facilitez les échanges entre les différents acteurs.
@@ -1654,7 +1866,9 @@
 
         <i class="fa-solid fa-mobile-screen-button"></i>
 
-        <h3>Mobile</h3>
+        <h3>
+          Mobile
+        </h3>
 
         <p>
           Une expérience conçue pour les smartphones.
@@ -1667,7 +1881,9 @@
 
         <i class="fa-solid fa-lock"></i>
 
-        <h3>Accès sécurisé</h3>
+        <h3>
+          Accès sécurisé
+        </h3>
 
         <p>
           Les accès peuvent être organisés selon le rôle de l'utilisateur.
@@ -1690,18 +1906,25 @@
 
       <div>
 
-        <span class="eyebrow"
-              style="color:#a9cbff;">
+        <span
+          class="eyebrow"
+          style="color:#a9cbff;">
+
           Sécurité
+
         </span>
+
 
         <h2>
           La sécurité fait partie de l'expérience.
         </h2>
 
+
         <p>
+
           Dalzon Shule doit être conçu avec une attention particulière
           portée aux comptes et aux informations scolaires.
+
         </p>
 
       </div>
@@ -1714,10 +1937,16 @@
           <i class="fa-solid fa-shield-halved"></i>
 
           <div>
-            <strong>Accès par rôle</strong>
+
+            <strong>
+              Accès par rôle
+            </strong>
+
             <br>
+
             Les informations peuvent être adaptées
             au profil de l'utilisateur.
+
           </div>
 
         </li>
@@ -1728,9 +1957,15 @@
           <i class="fa-solid fa-key"></i>
 
           <div>
-            <strong>Identifiants personnels</strong>
+
+            <strong>
+              Identifiants personnels
+            </strong>
+
             <br>
+
             Chaque utilisateur doit protéger ses identifiants.
+
           </div>
 
         </li>
@@ -1741,9 +1976,15 @@
           <i class="fa-solid fa-user-lock"></i>
 
           <div>
-            <strong>Protection des comptes</strong>
+
+            <strong>
+              Protection des comptes
+            </strong>
+
             <br>
+
             Les bonnes pratiques de sécurité sont essentielles.
+
           </div>
 
         </li>
@@ -1806,6 +2047,7 @@
 
     <div class="faq">
 
+
       <div class="faq-item">
 
         <button class="faq-question">
@@ -1821,9 +2063,11 @@
         <div class="faq-answer">
 
           <p>
+
             Dalzon Shule est une plateforme numérique destinée
             à rapprocher les établissements scolaires, les élèves
             et leurs familles.
+
           </p>
 
         </div>
@@ -1846,9 +2090,11 @@
         <div class="faq-answer">
 
           <p>
+
             Selon la configuration de l'établissement, la plateforme
             peut proposer des espaces destinés aux élèves, parents
             et responsables scolaires.
+
           </p>
 
         </div>
@@ -1871,8 +2117,10 @@
         <div class="faq-answer">
 
           <p>
+
             Les modalités de création et de distribution des comptes
             dépendent de l'établissement utilisant Dalzon Shule.
+
           </p>
 
         </div>
@@ -1895,8 +2143,10 @@
         <div class="faq-answer">
 
           <p>
+
             Consultez le centre d'assistance Dalzon Shule pour
             trouver une solution ou envoyer une demande au support.
+
           </p>
 
         </div>
@@ -1919,9 +2169,11 @@
         <div class="faq-answer">
 
           <p>
+
             L'interface est conçue pour être adaptée aux smartphones.
             La disponibilité d'une application mobile dépend de la
             version du projet déployée.
+
           </p>
 
         </div>
@@ -1949,17 +2201,23 @@
           Contact
         </span>
 
+
         <h2>
           Parlons de Dalzon Shule.
         </h2>
 
+
         <p>
-          Pour toute question concernant Dalzon Shule ou
-          Dalzon Entreprise, vous pouvez nous contacter.
+
+          Pour toute question concernant Dalzon Shule,
+          son fonctionnement ou les services de Dalzon Entreprise,
+          notre équipe reste disponible.
+
         </p>
 
 
         <div class="contact-info">
+
 
           <a
             class="contact-item"
@@ -1969,7 +2227,9 @@
 
             <div>
 
-              <strong>Téléphone</strong>
+              <strong>
+                Téléphone
+              </strong>
 
               <span>
                 +243 980 772 866
@@ -1988,7 +2248,9 @@
 
             <div>
 
-              <strong>E-mail</strong>
+              <strong>
+                Adresse e-mail
+              </strong>
 
               <span>
                 Info.dalzon@gmail.com
@@ -2007,7 +2269,9 @@
 
             <div>
 
-              <strong>Site officiel</strong>
+              <strong>
+                Site d'information
+              </strong>
 
               <span>
                 info.dalzonshule.com
@@ -2023,6 +2287,7 @@
         <!-- RÉSEAUX SOCIAUX -->
 
         <div class="socials">
+
 
           <a
             class="social instagram"
@@ -2066,7 +2331,7 @@
 
       <div class="contact-map">
 
-        <i class="fa-solid fa-location-dot"></i>
+        <i class="fa-solid fa-building"></i>
 
         <h3>
           Dalzon Entreprise
@@ -2078,12 +2343,14 @@
 
         <br>
 
+
         <a
-          href="tel:+243980772866"
+          href="mailto:Info.dalzon@gmail.com"
           class="btn btn-primary">
 
-          <i class="fa-solid fa-phone"></i>
-          Nous contacter
+          <i class="fa-solid fa-envelope"></i>
+
+          Contacter par e-mail
 
         </a>
 
@@ -2102,21 +2369,31 @@
 
     <div class="footer">
 
+
       <div>
 
         <div class="footer-brand">
 
           <div class="footer-brand-logo">
-            D
+
+            <img
+              class="site-logo"
+              src="https://i.ibb.co/r2FQH4kp/Chat-GPT-Image-4-ao-t-2026-09-22-33.png"
+              alt="Logo Dalzon Shule"
+            >
+
           </div>
 
           Dalzon Shule
 
         </div>
 
+
         <p>
+
           Connecter l'École à la Maison grâce à
           la technologie et à l'innovation.
+
         </p>
 
       </div>
@@ -2124,19 +2401,25 @@
 
       <div>
 
-        <h4>Dalzon Shule</h4>
+        <h4>
+          Dalzon Shule
+        </h4>
+
 
         <a href="#apropos">
           À propos
         </a>
 
+
         <a href="#fonctionnalites">
           Fonctionnalités
         </a>
 
+
         <a href="#faq">
           FAQ
         </a>
+
 
         <a href="https://dalzonshule.com">
           Plateforme
@@ -2147,15 +2430,20 @@
 
       <div>
 
-        <h4>Assistance</h4>
+        <h4>
+          Assistance
+        </h4>
+
 
         <a href="https://support.dalzonshule.com">
           Centre d'assistance
         </a>
 
+
         <a href="https://conditionsdutilisation.dalzonshule.com">
           Conditions d'utilisation
         </a>
+
 
         <a href="mailto:Info.dalzon@gmail.com">
           Contact
@@ -2169,9 +2457,13 @@
     <div class="footer-bottom">
 
       <span>
-        © <span id="year"></span> Dalzon Shule.
+
+        © <span id="year"></span>
+        Dalzon Shule.
         Tous droits réservés.
+
       </span>
+
 
       <span>
         Une initiative de Dalzon Entreprise.
@@ -2189,7 +2481,7 @@
   <script>
 
     /* =========================
-       ANNÉE
+       ANNÉE AUTOMATIQUE
     ========================== */
 
     document.getElementById("year").textContent =
@@ -2206,12 +2498,14 @@
     const navLinks =
       document.getElementById("navLinks");
 
+
     menuButton.addEventListener("click", function() {
 
       navLinks.classList.toggle("open");
 
       const icon =
         menuButton.querySelector("i");
+
 
       if (navLinks.classList.contains("open")) {
 
@@ -2257,20 +2551,25 @@
     const faqItems =
       document.querySelectorAll(".faq-item");
 
+
     faqItems.forEach(item => {
 
       const question =
         item.querySelector(".faq-question");
+
 
       question.addEventListener("click", function() {
 
         faqItems.forEach(other => {
 
           if (other !== item) {
+
             other.classList.remove("active");
+
           }
 
         });
+
 
         item.classList.toggle("active");
 
@@ -2287,6 +2586,7 @@
 
       const header =
         document.querySelector("header");
+
 
       if (window.scrollY > 30) {
 
